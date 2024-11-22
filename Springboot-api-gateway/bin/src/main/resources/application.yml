@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: Springboot-service-discovery-client
+          uri: http://localhost:4040/
+          Predicates:
+            - Path=/service1/**
